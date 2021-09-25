@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>Wei He' Resume</title>
+<title>Mengling's Blog</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -16,6 +16,23 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    function showMore() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more"; 
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less"; 
+        moreText.style.display = "inline";
+      }
+    }
+    </script>
 <style>
     html,
     body,
@@ -32,10 +49,7 @@
 <body class="w3-light-grey">
 
     <!--the address of the main image-->
-    <div class="text-center" style="margin-bottom:0;background-image: url('https://www.electrochem.org/wp-content/uploads/2016/12/battery-new.jpg?raw=true'); background-repeat: no-repeat;
-     background-size: cover;color:#ffffff;padding-top:5rem;padding-bottom : 30rem;background-attachment: fixed;">
-        <h1>Home page of Wei</h1>
-    </div>
+    
     <div style="background-color: #343a40;display:flex;flex-direction: row;justify-content: center;">
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
             <a class="navbar-brand" href="#">Home Page</a>
@@ -45,21 +59,25 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Skill</a>
+                        <a class="nav-link" href="#skill">Skill</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Language</a>
+                        <a class="nav-link" href="#language">Language</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Work Experience</a>
+                        <a class="nav-link" href="#publish">Publish</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Education</a>
+                        <a class="nav-link" href="#education">Education</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </div>
+
+
+  
+
 
     <div class="w3-content w3-margin-top" style="max-width:1400px;">
 
@@ -89,10 +107,10 @@
                             <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+1-6055925498</p>
                             <hr>
 
-                            <p class="w3-large"><b><i
+                            <p class="w3-large"><a name="skill"></a><b><i
                                         class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skill</b>
                             </p>
-                            <p style="font-size:1.3rem;"><span class="badge badge-info">Java</span>
+                            <p style="font-size:1.3rem;">
                                 <span class="badge badge-info">XRD</span>
                                 <span class="badge badge-info">FTIR</span>
                                 <span class="badge badge-info">Raman</span>
@@ -109,7 +127,7 @@
                                 <span class="badge badge-success">Adobe Illustrator</span>
                                 <br> -->
 
-                            <p class="w3-large w3-text-theme"><b><i
+                            <p class="w3-large w3-text-theme"> <a name="language"></a><b><i
                                         class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Language</b></p>
                             <p>Cinese</p>
                             <div class="w3-light-grey w3-round-xlarge">
@@ -134,7 +152,7 @@
                 <div class="col-sm-8">
 
                     <div class="w3-container w3-card w3-white w3-margin-bottom">
-                        <h2 class="w3-text-grey w3-padding-16"><i
+                        <h2 class="w3-text-grey w3-padding-16"><a name="education"></a><i
                                 class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
                         <div class="w3-container">
                             <h5 class="w3-opacity"><b>Ph.D. in Electric Engineering / South Dakota State University</b>
@@ -170,7 +188,7 @@
                     </div>
 
                     <div class="w3-container w3-card w3-white w3-margin-bottom">
-                        <h2 class="w3-text-grey w3-padding-16"><i
+                        <h2 class="w3-text-grey w3-padding-16"><a name="publish"></a><i
                                 class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Journal
                             Publications (First Author)</h2>
 
@@ -259,5 +277,8 @@
             <!-- end of footer -->
         </footer>
 </body>
+
+
+
 
 </html>
